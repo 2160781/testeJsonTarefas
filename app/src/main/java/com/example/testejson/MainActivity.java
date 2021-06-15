@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
-
+            Toast.makeText(getApplicationContext(),numberlist.toString(),Toast.LENGTH_LONG).show();
 
         }catch (IOException e){
             e.printStackTrace();
