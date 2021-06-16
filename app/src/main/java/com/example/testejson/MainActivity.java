@@ -50,7 +50,11 @@ public class MainActivity extends AppCompatActivity {
                 JSONObject obj = jsonArray.getJSONObject(i);
 
                 if (obj.getString("nome").equals("Receita de bolo")){
-                    numberlist.add(obj.getString("texto"));
+
+                    for(int a = 1; a < 5; a++){
+                        numberlist.add(obj.getString("texto" + a));
+                    }
+
                 }
 
             }

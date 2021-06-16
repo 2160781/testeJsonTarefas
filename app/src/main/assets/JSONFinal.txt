@@ -1,10 +1,10 @@
 [
 	{
 		"nome":"Receita de bolo",
-   		"texto":"1. Passo --> Preparação de ingredientes",
-        "texto":"2. Passo --> Mistura de ingredientes",
-       	"texto":"2. Passo --> Coloque o bolo no forno",
-        "texto":"4. Passo --> Finalizar o bolo"
+   		"texto1":"1. Passo --> Preparação de ingredientes",
+        "texto2":"2. Passo --> Mistura de ingredientes",
+       	"texto3":"3. Passo --> Coloque o bolo no forno",
+        "texto4":"4. Passo --> Finalizar o bolo"
 
 	},
 	{
