@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ListView lv;
     TextView caixadetexto;
+    private String nome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,14 +53,18 @@ public class MainActivity extends AppCompatActivity {
                 if (obj.getString("nome").equals("Receita de bolo")){
 
                     for(int a = 1; a < 5; a++){
-                        numberlist.add(obj.getString("texto" + a));
+                        if(a == 1){
+                            numberlist.add(obj.getString("texto" + a));
+
+                        }
+
                     }
 
                 }
 
             }
 
-
+            caixadetexto.setText(numberlist.toString());
             Toast.makeText(getApplicationContext(),numberlist.toString(),Toast.LENGTH_LONG).show();
 
         }catch (IOException e){
@@ -68,7 +73,5 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
-
-
 
 }
